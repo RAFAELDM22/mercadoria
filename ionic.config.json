@@ -1,0 +1,7 @@
+{
+  "name": "mercadoria",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
