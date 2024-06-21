@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { NavController } from '@ionic/angular';
+import { CarrinhoPage } from '../carrinho/carrinho.page';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -7,6 +8,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private navCtrl: NavController) {}
+
+  navigateToCarrinho(){
+    this.navCtrl.navigateForward('/carrinho');
+  }
 
 }

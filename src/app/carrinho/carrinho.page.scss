@@ -1,0 +1,21 @@
+.MC{
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px; 
+    background-color: #fff;
+}
+
