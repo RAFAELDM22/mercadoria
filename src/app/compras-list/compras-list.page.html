@@ -1,6 +1,93 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>comprasList</ion-title>
-  </ion-toolbar>
 </ion-header>
 
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-grid>
+      <ion-row>
+        <ion-col><div  class="local">
+          <ion-icon name="location-outline"  ></ion-icon>
+          Taboão Da Serra
+          </div></ion-col>
+        <ion-col size="auto">
+          <div style="width: 150px"> <div>
+            <ion-icon name="person-circle-outline" class="user"></ion-icon>
+          </div></div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+      <p class="p">Seja Bem-Vindo</p>
+    <ion-grid>
+      <ion-row>
+        <ion-col>Vamos pedir itens fresquinhos para você?</ion-col>
+      </ion-row>
+    </ion-grid>
+    <p class="cat">categorias</p>
+    <ion-grid [fixed]="true">
+      <ion-row>
+        <ion-col>
+          <div class="container">
+            <div class="img-sessao"><img src="../../assets/img-Mer-ionic/assets/frutas.png"></div>
+            <div class="footer-sessao"> Frutas </div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="container">
+            <div class="img-sessao"><img src="../../assets/img-Mer-ionic/assets/diversos.png"></div>
+            <div class="footer-sessao"> Diversos </div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="container">
+            <div class="img-sessao"><img src="../../assets/img-Mer-ionic/assets/acougue.png"></div>
+            <div class="footer-sessao"> Açougue </div>
+          </div>
+        </ion-col>
+      </ion-row>
+      <p class="compras">Minhas Compras</p>
+    </ion-grid>
+    <ion-list>
+      <ion-item class="list">
+        <ion-thumbnail slot="start">
+          <img alt="Silhouette of mountains" src="../../assets/img-Mer-ionic/assets/frutas.png" />
+        </ion-thumbnail>
+        <ion-label>Abacate<br>$50,00</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img alt="Silhouette of mountains" src="h../../assets/img-Mer-ionic/assets/maçã.png" />
+        </ion-thumbnail>
+        <ion-label>Maçã<br>$35,40</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img alt="Silhouette of mountains" src="../../assets/img-Mer-ionic/assets/acougue.png" />
+        </ion-thumbnail>
+        <ion-label>Frango<br>$56,44</ion-label>
+      </ion-item>
+    </ion-list>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="home">
+          <ion-icon name="home-outline"></ion-icon>
+          Home
+        </ion-tab-button>
+        <ion-tab-button tab="radio">
+          <ion-icon name="cart-outline"></ion-icon>
+          Carrinho
+        </ion-tab-button>
+        <ion-tab-button tab="library">
+          <ion-icon name="search"></ion-icon>
+        Busca
+        </ion-tab-button>
+        <ion-tab-button tab="search">
+          <ion-icon name="grid-outline"></ion-icon>
+          Menu
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </div> 
+  
+</ion-content>
